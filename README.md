@@ -36,5 +36,10 @@ Hi! 95% of the blog posts and aides online say "set up Airflow quickly using thi
      - look for the `pyenv` interpreter choice (it will say 3.8.10 on the left and `pyenv` in blue on the right)
    - Import profile of choice. A selection of my own preferences:
 
-
+## Upcoming Steps:
+ - WSL, Python & PostgreSQL
+ - Apache Airflow install & initial config
+ - Apache Airflow customizations
+ - REST API & vscode
+ - MinIO xcom backend
 
