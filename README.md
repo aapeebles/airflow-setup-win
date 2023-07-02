@@ -6,7 +6,7 @@ Hi! 95% of the blog posts and aides online say "set up Airflow quickly using thi
 
 ### The 1,000 feet view of the solution:
  - Windows Server (or Windows 10 machine)
- - WSL 1
+ - WSL 1 (This was the limiting factor)
  - Ubuntu 18.04.6
  - Apache Airflow 2.3
 
