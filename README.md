@@ -30,7 +30,11 @@ Hi! 95% of the blog posts and aides online say "set up Airflow quickly using thi
      - [great instructions](https://www.toptechskills.com/windows-10-tutorials-courses/how-to-install-enable-windows-subsystem-for-linux-wsl-windows-10/)
 - Set up Visual Studio Code
    - Choose a Python interpreter
-   - Import profile of choice
+     - open vscode
+     - `ctrl`+`shift`+`p` to open the settings search bar
+     - type "Python: select" and click on the `Python: select interpreter` option
+     - look for the `pyenv` interpreter choice (it will say 3.8.10 on the left and `pyenv` in blue on the right)
+   - Import profile of choice. A selection of my own preferences:
 
 
 
