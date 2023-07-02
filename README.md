@@ -1,9 +1,11 @@
-![clippy](clippy_airflow_banner.png)
-# Setting up Airflow locally on Windows
+<img align="right" src="https://github.com/aapeebles/airflow-setup-win/blob/41cad5f962c9d213e16c1b795b5b638903af881b/clippy_airflow_banner.png" height = "200"/>
+
+
+# Setting up Airflow on Windows (local)
 
 Hi! 95% of the blog posts and aides online say "set up Airflow quickly using this docker image!", "use managed Airflow on Azure!", or "set up Airflow on AWS/GCS!" And those solutions are great. And sometimes you have to do a proof of concept without those tools or the tool-set you have available is limited. All of the instructions here I have done on my own personal computer.
 
-**Scenario** : you have a Windows machine/server and you want an open-source, code-based solution to scheduling your code, but a GUI interface would be appropriate for the larger team.
+> **Scenario** : you have a Windows machine/server and you want an open-source, code-based solution to scheduling your code, but a GUI interface would be appropriate for the larger team.
 
 ### The 1,000 feet view of the solution:
  - Windows Server (or Windows 10 machine)
