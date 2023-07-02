@@ -20,7 +20,7 @@ Hi! 95% of the blog posts and aides online say "set up Airflow quickly using thi
    - Python 3.8.10:
      - `pyenv install 3.8.10`
      - `pyenv version` and copy output for later.Mine was `3.8.10 (set by C:\Users\aapee\.pyenv\pyenv-win\version)`
-   - pip install: I want these available no matter what virtual environment
+   - pip install: I want these available no matter what virtual environment. (I use pip in this example because collaborators are not as familiar with anaconda/conda/miniconda. Also, miniconda felt like one more thing to install. I know `conda-forge` handles packages dependencies better, please don't come at me :D )
      - `pyvenv`
      - `pipreqs`
      - `black`
