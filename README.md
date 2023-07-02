@@ -1,3 +1,4 @@
+![clippy](clippy_airflow_banner.png)
 # Setting up Airflow locally on Windows
 
 Hi! 95% of the blog posts and aides online say "set up Airflow quickly using this docker image!", "use managed Airflow on Azure!", or "set up Airflow on AWS/GCS!" And those solutions are great. And sometimes you have to do a proof of concept without those tools or the tool-set you have available is limited. All of the instructions here I have done on my own personal computer.
