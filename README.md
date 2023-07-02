@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/aapeebles/airflow-setup-win/blob/41cad5f962c9d213e16c1b795b5b638903af881b/clippy_airflow_banner.png" height = "200"/>
+<img align="right" src="https://github.com/aapeebles/airflow-setup-win/blob/47a4e8564bc5c9a0ffc6947af7c7abde98bc946f/img/clippy_short.png" height = "200"/>
 
 
 # Setting up Airflow on Windows (local)
