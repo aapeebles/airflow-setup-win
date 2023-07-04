@@ -19,18 +19,18 @@ Prerequisites:
 
 Open PowerShell and type `wsl`. I did that and got this message:
 
-![](../img/trytousewsl.png)
+<img src="https://github.com/aapeebles/airflow-setup-win/blob/ae5a7e8492d0b0e4c68c564f4a04ddc02c77ebd2/img/trytousewsl.png" width="700">
 
 So it's not enough to _install_ Ubuntu, you need to _open_ it before WSL will work. So went back to the Microsoft store and clicked "open"
 
 <img src="https://github.com/aapeebles/airflow-setup-win/blob/27208ddfb99090bb8e9ae86b866d70ee6758c434/img/ubuntu_open.png" width="400"/>
 
 Once I opened it I was prompted for the following:
-![](../img/ubuntu_install_pic.png)
+<img src="https://github.com/aapeebles/airflow-setup-win/blob/ae5a7e8492d0b0e4c68c564f4a04ddc02c77ebd2/img/ubuntu_install_pic.png" width="700">
 
 I chose a username and password and the installation went forward! (note how the header changes after I set my username!)
 
-![](../img/ubuntu_confirmed.png)
+<img src="https://github.com/aapeebles/airflow-setup-win/blob/ae5a7e8492d0b0e4c68c564f4a04ddc02c77ebd2/img/ubuntu_confirmed.png" width="700">
 
 You can now access Ubuntu _directly_ by opening the Ubuntu app on your computer _or_ by opening PowerShell and typing `wsl`.
 
