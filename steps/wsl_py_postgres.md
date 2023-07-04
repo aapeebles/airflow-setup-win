@@ -98,4 +98,41 @@ python --version
 
 ### Postgres Installation and setup
 
+While still inside WSL with sudo permissions, run:
+
+```
+apt-get install postgresql postgresql-contrib
+service postgresql start
+```
+
+I then opened a **new PowerShell** window to set up our Postgresql db for airflow:
+```
+wsl sudo -u postgres psql
+
+# you will see the command prompt change to 'postgres=#'
+# execute the following one line at time
+CREATE USER airflow PASSWORD 'airflow';
+CREATE DATABASE airflow;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO airflow;
+\q
+# the q is short for "quit"
+```
+
+If you get "WARNING:  could not flush dirty data: Function not implemented" do not worry. If you don't want to see that error again, go the postgresql config file `ect/postgresql/10/main/postgresql/conf` and add the lines:
+```
+fsync = off
+data_sync_retry = true
+```
+You did it! you installed Postgresql!
+
+### a few small details
+
+Inside `WSL`, restart postgresql and install another required package so postgresql and airflow can communicate:
+
+```
+service postgresql restart
+apt instal libpq-dev
+```
+
+## You're now ready to install Airflow!!!
 
