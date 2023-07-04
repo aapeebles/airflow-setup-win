@@ -19,4 +19,43 @@ sudo apt-get install -y --no-install-recommends \
 ```
 
 
-` pip install apache-airflow[async,postgress,goolge]==2.3.1 --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.3.1/constraints-3.8.txt" `
+```
+pip install venv
+python -m venv ./af_venv
+source .af_venv/bin/activate
+
+pip install psycopg2
+mkdir airflow
+cd airflow
+pip install apache-airflow[async,postgress,goolge]==2.3.1 --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.3.1/constraints-3.8.txt"
+```
+```
+export PATH=$PATH:/home/your_user/.local/bin/
+airflow scheduler
+# wait a moment
+```
+`ctrl`+`c`
+
+open airflow/airflow.cfg (with `vim`, `nano`, or even `notepad`)
+find and edit the following variables:
+ - `executor` = LocalExecutor
+ - `sql_alchemy_conn` = postgresql+psycopg2://airflow:airflow@localhost/airflow
+
+`save` and close file.
+NOTE: run each of these commands that start with `airflow` in a new command window.
+
+```
+airflow db init
+airflow users create -r Admin -u admin -e admin@example.com -f admin -l user -p test
+```
+
+```
+airflow webserver
+```
+
+```
+airflow scheduler
+```
+open chrome to `http://localhost:8080/`, log in with `admin` and `test`, and you have airflow running!! WHOOHOO!
+
+
