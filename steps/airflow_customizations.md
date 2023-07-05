@@ -1,5 +1,8 @@
 ## Customizations
 
+### Create folders
+`~/airflow/dags`
+`~/airflow/plugins`
 
 ### Code editor
 [code editor](https://github.com/andreax79/airflow-code-editor)
